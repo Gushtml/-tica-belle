@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./SRC/imagens/Logotipo.jpeg" type=" logo da loja">
+    <title>Oticas Belle</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./SRC/css/estilos.css">
+    <link rel="stylesheet" href="./SRC/css/reset.css">
+    <link rel="stylesheet" href="./SRC/css/responsivo.css">
+</head>
+<body>
+    <main>
+        <div class="fundo">
+            <!--fundo do site-->
+
+        </div>
+    </main>
+    <div id="login-menu">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="social-links">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fc%2F559183656615&e=AT16VguvkYWZjZCHTQsFr4tT1Yq6JA6fJ55gKuAwumowCrbT1tPDaDm2oaZYSqmzdGu8l08h1oFTzBneTjVvPIrrb4S2Q5V4Xo70Ig11CJRhQw2NLrDgjw" target="_blank" rel="noopener noreferrer">
+                <img src="SRC/imagens/download-removebg-preview.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/oticabelle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <img src="SRC/imagens/OIP-removebg-preview.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Perform your login logic here, e.g., sending a request to the server.
+            // For simplicity, I'll assume the login is successful.
+
+            // Navigate to another page after successful login.
+            window.location.href = 'your-new-page.html';
+        });
+    </script>
+</body>
+</html>
